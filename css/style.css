@@ -17,7 +17,7 @@ body {
 #greeting {
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 32%;
   transform: translate(-50%, -50%);
   font-size: 18px;
   text-align: center;
@@ -33,7 +33,7 @@ input[type="submit"] {
   width: 100px;
   height: 50px;
   left: 50%;
-  top: 40%;
+  top: 37%;
   transform: translate(-50%, -50%);
   border: none;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -60,10 +60,10 @@ input[type="text"]:first-child {
 #clock {
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 19%;
   transform: translate(-50%, -50%);
-  font-size: 70px;
-  padding: 15px 25px;
+  font-size: 65px;
+  padding: 10px 15px;
   border: 3px solid white;
 }
 
@@ -73,18 +73,18 @@ input[type="text"]:first-child {
   left: 50%;
   bottom: 1%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 #quote span:last-child {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #todo-form {
   position: absolute;
-  top: 47%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -102,7 +102,7 @@ input[type="text"]:first-child {
   overflow-x: hidden;
   position: absolute;
   top: 70%;
-  left: 50%;
+  left: 35%;
   transform: translate(-50%, -50%);
   list-style: none;
   -ms-overflow-style: none; /*스크롤바 숨김*/
@@ -110,12 +110,29 @@ input[type="text"]:first-child {
 #todo-list::-webkit-scrollbar {
   display: none; /*스크롤바 숨김*/
 }
-#todo-list li {
-  margin-bottom: 10px;
-  font-size: 20px;
+
+#check-list {
+  height: 270px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  list-style: none;
 }
 
-#todo-list button {
+#todo-list li,
+#check-list li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#todo-list button,
+#check-list button {
+  margin: 5px;
   background: none;
   border: none;
 }
@@ -123,10 +140,30 @@ input[type="text"]:first-child {
 #weather {
   position: absolute;
   right: 3%;
-  top: 5%;
+  top: 3%;
   font-size: 15px;
 }
 #weather span:first-child {
   font-size: 20px;
   color: blue;
+}
+
+p {
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+}
+
+.will {
+  position: absolute;
+  top: 49%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.past {
+  position: absolute;
+  top: 49%;
+  left: 65%;
+  transform: translate(-50%, -50%);
 }

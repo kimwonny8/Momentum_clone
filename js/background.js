@@ -14,5 +14,4 @@ bgImage.style.height = "730px";*/
 document.body.style.backgroundImage = "url("+url+")";
 document.body.style.backgroundSize = "cover";
 
-
 document.body.appendChild(bgImage);
