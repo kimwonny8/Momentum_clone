@@ -27,13 +27,13 @@
       </div>
       <div class="datebox">
         <div class="title">날짜</div>
-        <input type="text"  id="datetext" placeholder="날짜를 입력해주세요" />
+        <input type="text"  id="datetext" onkeyup="enterkeyDate()" placeholder="날짜를 입력해주세요" />
         <button id="dateplus" class="button whiteButton ">
             <i class="fas fa-plus fa-2x"></i></a>
           </button></div>
           <div class="listbox">
             <div class="title ">할 일</div>
-            <div><input type="text" id="todotext" onkeyup="enterkey()" placeholder="할 일을 추가해주세요" />
+            <div><input type="text" id="todotext" onkeyup="enterkeyList()" placeholder="할 일을 추가해주세요" />
                 <button id="todoplus" class="button whiteButton">
               <i class="fas fa-plus fa-2x"></i></a>
             </button></div>

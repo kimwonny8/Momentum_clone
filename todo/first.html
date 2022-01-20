@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="plusstyles.css">
+    <link rel="stylesheet" href="plusstyles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css"
@@ -17,22 +17,37 @@
       href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Cute+Font&family=Do+Hyeon&family=Dokdo&family=East+Sea+Dokdo&family=Gaegu&family=Gamja+Flower&family=Gothic+A1&family=Gugi&family=Hi+Melody&family=Jua&family=Kirang+Haerang&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&family=Poor+Story&family=Single+Day&family=Song+Myung&family=Stylish&family=Sunflower:wght@300&family=Yeon+Sung&display=swap"
       rel="stylesheet"
     />
-    <title>JungWon</title>
+    <title>Open</title>
   </head>
-  <body> <div id="all">
-    <div id="top">
-      <button class="button">
-          <a href="first.html">
-          <i class="fas fa-home fa-2x"></i>
+  <body>
+    <div id="all">
+      <h1 class="clock"></h1>
+      <p class="title maintitle">@_kimwonny toDoList</p>
+      <button class="goindex">
+        <a href="index.html">
+          <i class="far fa-calendar-check fa-5x"></i>
         </a>
       </button>
+      <div class="list main">
+        <p>투두리스트를 시작하시려면 <br />위 버튼을 눌러주세요!</p>
+        <p>
+          메인에 들어가신 후 <br />
+          오른쪽 위에 있는 + 버튼을 눌러 <br />
+          날짜와 할 일을 추가 하셔서 <br />
+          사용하시면 됩니다!
+        </p>
+      </div>
     </div>
-  </div>
-  <img class="img" src="https://mblogthumb-phinf.pstatic.net/MjAxODAxMjlfMjAz/MDAxNTE3MjM1ODEyNjE2.sc336lWAMINF2jvvaKRzyUj2btBPQ6aExGk4BBrAqHMg.NcxxFNo9OH9U17gLUbxPAuGpDXDp8gyRcYw2R29tq3Mg.JPEG.heima916/IMG_0854.jpg?type=w800" >
-  <div class="list introduce">
-      <p >만든 사람 : 김정원</p>
-      <p >만든 날짜 : 2022.01.19</p>
-      <p> 참고: 두잉두잉 어플</p>
-  </div>
-  </div></body>
+
+    <script>
+      const clock = document.querySelector(".clock");
+      const time = new Date();
+      const month = time.getMonth() + 1;
+      const day = time.getDate();
+      const hour = time.getHours();
+      const minute = time.getMinutes();
+      clock.innerHTML = `오늘 날짜 : ${month}월 ${day}일!<br><br>현재 시간 : ${hour}시 ${minute}분`;
+      setInterval(getTime, 1000);
+    </script>
+  </body>
 </html>
