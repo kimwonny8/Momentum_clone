@@ -1,3 +1,3 @@
 # momentum
 ------------
-### These are the to-do lists I made while studying JavaScript.
+### These are the to-do list I made while studying JavaScript.
